@@ -1,7 +1,11 @@
 import styles from "./socialLinks.module.css";
 
-const SocialLinks = () => {
-  return <div href="https://google.com">🌎</div>;
+const SocialLinks = ({ link, icon }) => {
+  return (
+    <a href={link}>
+      <ion-icon name={icon}></ion-icon>
+    </a>
+  );
 };
 
 export default SocialLinks;
