@@ -1,5 +1,7 @@
 import "./App.css";
-import foto from "./img/WhatsApp Image 2025-02-24 at 18.35.06 (1).jpeg";
+import foto from "./img/perfil1.jpeg";
+import foto2 from "./img/perfil2.jpeg";
+
 import Perfil from "./components/perfil/perfil";
 import Switch from "./components/switch/Switch";
 import Links from "./components/links/Links";
@@ -15,15 +17,16 @@ const App = () => {
 
   return (
     <div id="App" className={isLight ? "light" : ""}>
-      <Perfil fotoPerfil={foto}>@Najul1a</Perfil>
+      <Perfil fotoPerfil={isLight ? foto : foto2}> </Perfil>
       <Switch troca={troca} isLight={isLight} />
-      <ul>
-        <Links link={"https://github.com/Najul1a"}>GitHub</Links>
-        <Links link={"https://instragram.com/anna_ofz_"}>Instragram</Links>
-        <Links link={"https://br.linkedin.com/"}>Linkdln</Links>
-        <Links link={"https://www.youtubekids.com/"}>Youtube</Links>
-      </ul>
-
+      <div id="container">
+        <ul>
+          <Links link={"https://github.com/Najul1a"}>GitHub</Links>
+          <Links link={"https://instragram.com/anna_ofz_"}>Instragram</Links>
+          <Links link={"https://br.linkedin.com/"}>Linkdln</Links>
+          <Links link={"https://www.youtubekids.com/"}>Youtube</Links>
+        </ul>
+      </div>
       <div id="socialLinks">
         <SocialLinks link={"https://github.com/Najul1a"} icon={"logo-github"} />
         <SocialLinks
