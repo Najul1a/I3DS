@@ -7,8 +7,8 @@
 }
 
 :root {
-  --bg-url: url(./img/bg-desktop.jpg);
-  --text-color: #fff;
+  --bg-url: url(./img/linda.webp);
+  --text-color: #040404;
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.5);
@@ -17,7 +17,7 @@
 }
 
 .light {
-  --bg-url: url(./img/bg-desktop-light.jpg);
+  --bg-url: url(./img/lindo.jpg);
   --text-color: #000;
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.1);
