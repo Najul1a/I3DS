@@ -1,7 +1,6 @@
 import "./App.css";
 import foto from "./img/perfil1.jpeg";
 import foto2 from "./img/perfil2.jpeg";
-
 import Perfil from "./components/perfil/perfil";
 import Switch from "./components/switch/Switch";
 import Links from "./components/links/Links";
@@ -17,7 +16,7 @@ const App = () => {
 
   return (
     <div id="App" className={isLight ? "light" : ""}>
-      <Perfil fotoPerfil={isLight ? foto : foto2}> </Perfil>
+      <Perfil fotoPerfil={isLight ? foto : foto2}>@Najul1a </Perfil>
       <Switch troca={troca} isLight={isLight} />
       <div id="container">
         <ul>
