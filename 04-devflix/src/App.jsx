@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Lupa from "./assets/search.svg";
+import Logo from "./assets/devflix.png";
 import Footer from "./components/footer/Footer";
 import MovieCard from "./components/movieCard/MovieCard";
 
@@ -31,8 +33,7 @@ const App = () => {
   };
   return (
     <div id="app">
-      <h1>Olá</h1>
-      <img className="logo" src={"https://placehold.co/200x200"} alt="" />
+      <img className="logo" src={Logo} alt="" />
 
       <div className="search">
         <input
@@ -41,16 +42,12 @@ const App = () => {
           type="text"
           placeholder="pesquise por filmes"
         />
-        <img
-          onClick={() => searchMovies(search)}
-          src={"https://placehold.co/20x20"}
-          alt=""
-        />
+        <img onClick={() => searchMovies(search)} src={Lupa} alt="" />
       </div>
       {movies?.length > 0 ? (
         <div className="container">
           {movies.map((movie, index) => (
-            <MovieCard key={index} {...movie} />
+            <MovieCard key={index} apiUrl={apiUrl} {...movie} />
           ))}
         </div>
       ) : (
