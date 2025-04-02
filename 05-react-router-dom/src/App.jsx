@@ -9,7 +9,7 @@ import Contato from "./components/pages/Contato"
 import Home from "./components/pages/Home"
 import NaoEncontrado from "./components/pages/NaoEncontrado"
 import Sobre from "./components/pages/Sobre"
-
+import Footer from "./components/footer/Footer"
 
 
 function App() {
